@@ -1,3 +1,5 @@
+using VideoStream.Infrastructure.DependencyInjection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +8,11 @@ builder.Services.AddOpenApi();
 builder.Services.AddHealthChecks();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+var connectionString = builder.Configuration.GetConnectionString("VideoStreamDatabase")
+    ?? throw new InvalidOperationException("Connection string 'VideoStreamDatabase' not configured.");
+
+    builder.Services.AddInfrastructure(connectionString);
 
 var app = builder.Build();
 
