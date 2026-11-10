@@ -16,6 +16,5 @@ public static class InfrastructureServiceCollectionExtensions
             options.UseNpgsql(connectionString));
 
             return services;
-
     }
 }
