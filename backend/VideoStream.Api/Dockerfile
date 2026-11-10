@@ -8,7 +8,7 @@ COPY VideoStream.slnx ./
 COPY VideoStream.Api/VideoStream.Api.csproj VideoStream.Api/
 COPY VideoStream.Application/VideoStream.Application.csproj VideoStream.Application/
 COPY VideoStream.Domain/VideoStream.Domain.csproj VideoStream.Domain/
-COPY VideoStream.Infrastructure/VideoStream.Infrastructure.csproj VideoStream.Infrastructure/
+COPY VideoStream.InfraStructure/VideoStream.InfraStructure.csproj VideoStream.InfraStructure/
 COPY VideoStream.Contracts/VideoStream.Contracts.csproj VideoStream.Contracts/
 COPY VideoStream.Tests/VideoStream.Tests.csproj VideoStream.Tests/
 

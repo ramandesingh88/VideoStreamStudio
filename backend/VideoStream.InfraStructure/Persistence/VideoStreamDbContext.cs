@@ -1,11 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace VideoStream.Infrastructure.Persistence;
+namespace VideoStream.InfraStructure.Persistence;
 
 public  sealed class VideoStreamDbContext : DbContext
 {
     public VideoStreamDbContext(DbContextOptions<VideoStreamDbContext> options) : base(options)
     {
+        
     }
 
     protected override void OnModelCreating(
