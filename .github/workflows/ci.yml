@@ -15,11 +15,25 @@ name: .NET Foundation CI
 jobs:
   build-and-test:
     name: Build and Test
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      -  name: Inspect checkout structure
+          run: |
+          echo "Current directory:"
+          pwd
+
+          echo "Repository root:"
+          ls -la
+
+          echo "Tracked solution files:"
+          git ls-files '*.slnx' '*.sln'
+
+          echo "Tracked project files:"
+          git ls-files '*.csproj'
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
