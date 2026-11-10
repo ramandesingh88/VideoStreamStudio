@@ -6,23 +6,28 @@ name: .NET Foundation CI
     branches:
       - main
       - develop
+
   pull_request:
     branches:
       - main
       - develop
+
   workflow_dispatch:
 
 jobs:
   build-and-test:
     name: Build and Test
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
+
+    env:
+      ConnectionStrings__VideoStreamDatabase: "Host=localhost;Port=5432;Database=videostream;Username=videostream;Password=ci_password"
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      -  name: Inspect checkout structure
-          run: |
+      - name: Inspect checkout structure
+        run: |
           echo "Current directory:"
           pwd
 
@@ -47,4 +52,4 @@ jobs:
         run: dotnet build backend/VideoStream.slnx --configuration Release --no-restore
 
       - name: Run tests
-        run: dotnet test backend/VideoStream.slnx --configuration Release --no-build --logger "trx;LogFileName=test-results.trx"
+        run: dotnet test backend/VideoStream.slnx --configuration Release --no-build
