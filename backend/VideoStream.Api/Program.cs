@@ -1,4 +1,4 @@
-using VideoStream.InfraStructure.DependencyInjection;
+using VideoStream.Infrastructure.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 

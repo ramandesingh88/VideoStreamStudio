@@ -1,4 +1,4 @@
-﻿namespace VideoStream.InfraStructure;
+﻿namespace VideoStream.Infrastructure;
 
 public class Class1
 {

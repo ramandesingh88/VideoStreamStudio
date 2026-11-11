@@ -1,10 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using VideoStream.InfraStructure.Persistence;
+using VideoStream.Infrastructure.Persistence;
 
-namespace VideoStream.InfraStructure.DependencyInjection;
+namespace VideoStream.Infrastructure.DependencyInjection;
 
-public static class InfraStructureServiceCollectionExtensions
+public static class InfrastructureServiceCollectionExtensions
 {
     public static IServiceCollection AddInfrastructure(
         this IServiceCollection services,

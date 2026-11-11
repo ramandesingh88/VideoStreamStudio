@@ -3,6 +3,6 @@
   <Project Path="VideoStream.Application/VideoStream.Application.csproj" />
   <Project Path="VideoStream.Contracts/VideoStream.Contracts.csproj" />
   <Project Path="VideoStream.Domain/VideoStream.Domain.csproj" />
-  <Project Path="VideoStream.InfraStructure/VideoStream.InfraStructure.csproj" />
+  <Project Path="VideoStream.Infrastructure/VideoStream.Infrastructure.csproj" />
   <Project Path="VideoStream.Tests/VideoStream.Tests.csproj" />
 </Solution>

@@ -17,7 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\VideoStream.Application\VideoStream.Application.csproj" />
-    <ProjectReference Include="..\VideoStream.InfraStructure\VideoStream.InfraStructure.csproj" />
+    <ProjectReference Include="..\VideoStream.Infrastructure\VideoStream.Infrastructure.csproj" />
     <ProjectReference Include="..\VideoStream.Contracts\VideoStream.Contracts.csproj" />
   </ItemGroup>
 

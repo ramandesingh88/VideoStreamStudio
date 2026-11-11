@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
-using VideoStream.InfraStructure.Persistence;
+using VideoStream.Infrastructure.Persistence;
 
 public sealed class VideoStreamDbContextFactory : IDesignTimeDbContextFactory<VideoStreamDbContext>
 {
