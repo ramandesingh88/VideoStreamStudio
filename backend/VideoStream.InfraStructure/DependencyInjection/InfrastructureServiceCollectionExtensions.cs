@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using VideoStream.Infrastructure.Persistence;
+using VideoStream.InfraStructure.Persistence;
 
-namespace VideoStream.Infrastructure.DependencyInjection;
+namespace VideoStream.InfraStructure.DependencyInjection;
 
 public static class InfrastructureServiceCollectionExtensions
 {

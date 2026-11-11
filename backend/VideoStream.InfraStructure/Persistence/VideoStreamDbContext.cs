@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace VideoStream.Infrastructure.Persistence;
+namespace VideoStream.InfraStructure.Persistence;
 
 public  sealed class VideoStreamDbContext : DbContext
 {
